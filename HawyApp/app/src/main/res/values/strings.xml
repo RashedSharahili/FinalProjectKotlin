@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Hawy</string>
+    <string name="home_tab">Home</string>
+    <string name="discover_tab">Discover</string>
+    <string name="map_tab">Map</string>
+    <string name="profile_tab">Profile</string>
+    <string name="skip">SKIP</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="next">NEXT</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_label">Register</string>
+    <string name="enter_your_username">Username</string>
+    <string name="confirm_your_password">Confirm Password</string>
+    <string name="already_have_account">Already Have Account</string>
+    <string name="register_btn">Register</string>
+    <string name="password_reset">password Reset</string>
+    <string name="please_enter_your_email">Please enter your email to request a password reset</string>
+    <string name="set_password">Set password</string>
+    <string name="back">Back</string>
+    <string name="get_started">Get started</string>
+    <string name="on_boarding1_title">Welcome to Hawy App</string>
+    <string name="on_boarding1_desc">Meet up with people of similar interest to you</string>
+    <string name="on_boarding2_title">Three in one platform</string>
+    <string name="on_boarding2_desc">Passion and Hobby and Ambition</string>
+    <string name="add_session">Add Session</string>
+    <string name="following_sessions">Following Sessions</string>
+    <string name="general_sessions">General Sessions</string>
+    <string name="edit_profile_btn">Edit Profile</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="username">UserName</string>
+    <string name="bio">Bio</string>
+    <string name="followers_count">10</string>
+    <string name="followers">Followers</string>
+    <string name="sessions_count">10</string>
+    <string name="sessions">Sessions</string>
+    <string name="sessions_distance">%s KM</string>
+    <string name="category">Category</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="title">Title</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="phone">Phone</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="details">Details</string>
+    <string name="add_session_btn">Add Session</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="save">Save</string>
+
+    <!-- Category String -->
+    <string-array name="categories">
+        <item>Health</item>
+        <item>Tech</item>
+        <item>Art</item>
+        <item>Engineering</item>
+        <item>Sports</item>
+    </string-array>
+</resources>

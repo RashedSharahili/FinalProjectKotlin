@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">هاوي</string>
+    <string name="home_tab">الصفحة الرئيسية</string>
+    <string name="discover_tab">استكشف</string>
+    <string name="map_tab">الخريطة</string>
+    <string name="profile_tab">الملف الشخصي</string>
+    <string name="skip">تخطي</string>
+    <string name="previous">السابق</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="enter_your_email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="enter_your_password">كلمة المرور</string>
+    <string name="login_btn">دخول</string>
+    <string name="forget_password">نسيت كلمة المرور ؟</string>
+    <string name="register">تسجيل جديد</string>
+    <string name="hello_blank_fragment">مرحباً</string>
+    <string name="register_label">إنشاء حساب</string>
+    <string name="enter_your_username">اسم المستخدم</string>
+    <string name="confirm_your_password">تأكيد كلمة المرور</string>
+    <string name="already_have_account">لدي حساب بالفعل</string>
+    <string name="register_btn">تسجيل</string>
+    <string name="password_reset">إعادة تعيين كلمة المرور</string>
+    <string name="please_enter_your_email">يرجى إدخال بريدك الالكتروني لطلب إعادة كلمة المرور</string>
+    <string name="set_password">تعيين كلمة المرور</string>
+    <string name="back">عودة</string>
+    <string name="get_started">أبدا الآن</string>
+    <string name="next">التالي</string>
+    <string name="on_boarding1_title">أهلاً بك في تطبيق هاوي</string>
+    <string name="on_boarding1_desc">اجتمع مع أشخاص في نفس اهتمامك</string>
+    <string name="on_boarding2_title">ثلاثة في منصة واحدة</string>
+    <string name="on_boarding2_desc">الشغف و الهواية و الطموح</string>
+    <string name="add_session">إنشاء جلسة</string>
+    <string name="following_sessions">جلسات المتابَعين</string>
+    <string name="general_sessions">جلسات عامة</string>
+    <string name="edit_profile_btn">تعديل الملف</string>
+    <string name="nick_name">الاسم</string>
+    <string name="username">Username</string>
+    <string name="bio">نبذة تعريفية</string>
+    <string name="followers_count">١٠</string>
+    <string name="followers">متابعِين</string>
+    <string name="sessions_count">١٠</string>
+    <string name="sessions">جلسات</string>
+    <string name="sessions_distance">%s كم</string>
+    <string name="category">الفئة</string>
+    <string name="enter_category">أختر الفئة</string>
+    <string name="title">العنوان</string>
+    <string name="enter_title">أدخل العنوان</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="enter_phone">أدخل رقم الجوال</string>
+    <string name="details">التفاصيل</string>
+    <string name="add_session_btn">اضافة جلسة</string>
+
+    <!-- Category String -->
+    <string-array name="categories">
+        <item>الصحة</item>
+        <item>التقنية</item>
+        <item>الفن</item>
+        <item>الهندسة</item>
+        <item>الرياضة</item>
+    </string-array>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="first_name">الأسم الأول</string>
+    <string name="enter_first_name">أدخل الأسم الأول</string>
+    <string name="last_name">الأسم الأخير</string>
+    <string name="enter_last_name">أدخل الأسم الأخير</string>
+    <string name="save">حفظ</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/nav_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/nav_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/ic_hawy_foreground"
+            android:contentDescription="Navigation icon" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/add_session_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_session"
+            android:backgroundTint="@color/teal_700" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/following_sessions_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/following_sessions"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/ge_ss_tv_medium_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_action" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sessions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="56dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        app:layout_constraintTop_toBottomOf="@id/following_sessions_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/session_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
