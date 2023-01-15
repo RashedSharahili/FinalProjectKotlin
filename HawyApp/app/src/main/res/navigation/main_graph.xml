@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_addSessionFragment"
             app:destination="@id/addSessionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sessionDetailsFragment"
+            app:destination="@id/sessionDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/addSessionFragment"
@@ -43,10 +46,40 @@
         android:id="@+id/discoverFragment"
         android:name="com.hawy.www.ui.main.DiscoverFragment"
         android:label="@string/discover_tab"
-        tools:layout="@layout/fragment_discover" />
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discoverFragment_to_sessionDetailsFragment"
+            app:destination="@id/sessionDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.hawy.www.ui.main.MapsFragment"
         android:label="@string/map_tab"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/sessionDetailsFragment"
+        android:name="com.hawy.www.ui.main.SessionDetailsFragment" >
+        <argument
+            android:name="session_category"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="session_title"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="session_details"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="session_lat"
+            app:argType="string" />
+        <argument
+            android:name="session_long"
+            app:argType="string" />
+        <argument
+            android:name="user_phone_number"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 </navigation>

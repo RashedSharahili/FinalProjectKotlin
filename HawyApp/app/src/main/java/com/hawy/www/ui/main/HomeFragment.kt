@@ -16,6 +16,7 @@ import com.hawy.www.databinding.FragmentHomeBinding
 import com.hawy.www.ui.main.session.SessionListAdapter
 import com.hawy.www.ui.main.session.SessionViewModel
 import com.hawy.www.ui.main.session.SessionViewModelFactory
+import com.hawy.www.ui.main.session.UserSessionListAdapter
 
 class HomeFragment : Fragment() {
 
@@ -50,7 +51,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = SessionListAdapter(this.requireContext())
+        val adapter = UserSessionListAdapter(this.requireContext())
         binding.rvSessions.adapter = adapter
 
 //        sessionViewModel.getUserFollowing()

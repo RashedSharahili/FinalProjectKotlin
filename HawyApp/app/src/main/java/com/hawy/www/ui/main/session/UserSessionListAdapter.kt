@@ -2,25 +2,22 @@ package com.hawy.www.ui.main.session
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.google.maps.android.SphericalUtil
 import com.hawy.www.R
 import com.hawy.www.data.model.session.Session
 import com.hawy.www.databinding.SessionItemBinding
 import com.hawy.www.ui.auth.currentLocation
-import com.hawy.www.ui.main.DiscoverFragmentDirections
 import com.hawy.www.ui.main.HomeFragmentDirections
 import kotlin.math.round
 
-class SessionListAdapter(private val context: Context) :
-    ListAdapter<Session, SessionListAdapter.SessionViewHolder>(DiffCallBack) {
+class UserSessionListAdapter(private val context: Context) :
+    ListAdapter<Session, UserSessionListAdapter.SessionViewHolder>(DiffCallBack) {
 
 
     class SessionViewHolder(var binding: SessionItemBinding) :
@@ -91,7 +88,49 @@ class SessionListAdapter(private val context: Context) :
 
         holder.itemView.setOnClickListener {
 
-            val action = DiscoverFragmentDirections.actionDiscoverFragmentToSessionDetailsFragment(
+//            var localCategoryImage = null
+//
+//            when(item.category) {
+//
+//                "الصحة" -> {
+//
+////                Log.d("TAG", "onBindViewHolder: الصحة")
+//
+//                    holder.binding.sessionCategoryImage.setImageResource(R.drawable.health)
+//                }
+//
+//                "التقنية" -> {
+//
+////                Log.d("TAG", "onBindViewHolder: التقنية")
+//
+//                    holder.binding.sessionCategoryImage.setImageResource(R.drawable.tech)
+//                }
+//
+//                "الفن" -> {
+//
+////                Log.d("TAG", "onBindViewHolder: الفن")
+//
+//                    holder.binding.sessionCategoryImage.setImageResource(R.drawable.art)
+//                }
+//
+//                "الهندسة" -> {
+//
+////                Log.d("TAG", "onBindViewHolder: الهندسة")
+//
+//                    holder.binding.sessionCategoryImage.setImageResource(R.drawable.engineering)
+//                }
+//
+//                "الرياضة" -> {
+//
+////                Log.d("TAG", "onBindViewHolder: الرياضة")
+//
+//                    holder.binding.sessionCategoryImage.setImageResource(R.drawable.sports)
+//                }
+//
+//            }
+
+            val action = HomeFragmentDirections.actionHomeFragmentToSessionDetailsFragment(
+
                 sessionCategory = item.category,
                 sessionTitle = item.title,
                 sessionDetails = item.details,
